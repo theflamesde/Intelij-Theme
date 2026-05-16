@@ -147,5 +147,25 @@
     "ToolTip": {
       "background": "#202938"
     }
-  }
+  },
+  "StatusBar": {
+    "background": "#11161c",
+    "foreground": "#7d8590"
+  },
+
+  "Header": {
+    "background": "#11161c"
+  },
+  "ScrollBar": {
+    "thumbColor": "#2a313c",
+    "hoverColor": "#3a2020",
+    "trackColor": "#161d26"
+  },
+  "Notifications": {
+    "errorBackground": "#3a2020",
+    "warningBackground": "#2a2416",
+    "infoBackground": "#202938"
+  },
+  "Editor.caretColor": "#ff4040",
+  "Editor.inactiveCaretColor": "#7d8590"
 }
