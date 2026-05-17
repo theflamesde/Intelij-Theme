@@ -1,5 +1,5 @@
 {
-  "name": "The Flames Islands Light",
+  "name": "The Flames Light",
   "dark": false,
   "author": "The Flames",
 
@@ -24,7 +24,13 @@
     "selectionBackground": "#ffd6d6",
     "selectionForeground": "#1f2328",
 
-    "activeTabBackground": "#ffffff"
+    "activeTabBackground": "#ffffff",
+
+    "textDefaultColor": "#1f2328",
+    "textMutedColor": "#57606a",
+    "textSecondaryColor": "#8c959f",
+    "textDisabledColor": "#afb8c1",
+    "textLinkColor": "#ff4040"
   },
 
   "ui": {
@@ -53,13 +59,13 @@
     "TabbedPane": {
       "underlineColor": "#ff4040",
       "focusColor": "#ff4040",
-      "hoverColor": "#f1f3f6",
-      "contentAreaColor": "#f6f8fb",
+      "hoverColor": "activeTabBackground",
+      "contentAreaColor": "activeTabBackground",
       "tabHeight": 36
     },
 
     "EditorTabs": {
-      "underlinedTabBackground": "#ffffff",
+      "underlinedTabBackground": "activeTabBackground",
       "inactiveUnderlinedTabBackground": "#eef2f6",
       "underlinedBorderColor": "#ff4040",
       "inactiveUnderlinedTabBorderColor": "#d0d7de"
@@ -81,13 +87,15 @@
     },
 
     "MainWindow.Tab": {
+      "borderColor": "backgroundColor",
       "background": "#f6f8fb",
-      "hoverBackground": "#eef2f6",
+      "hoverBackground": "activeTabBackground",
 
       "foreground": "#57606a",
       "selectedForeground": "#1f2328",
 
-      "selectedBackground": "#ffffff"
+      "selectedBackground": "activeTabBackground",
+      "selectedInactiveBackground": "activeTabBackground"
     },
 
     "DefaultTabs": {
@@ -147,6 +155,26 @@
 
     "ToolTip": {
       "background": "#ffffff"
+    },
+
+    "ToolWindow": {
+      "background": "toolWindowBackground",
+      "Button": {
+        "hoverBackground": "activeTabBackground",
+        "selectedBackground": "activeTabBackground",
+        "selectedForeground": "foregroundColor"
+      },
+
+      "Header": {
+        "background": "activeTabBackground",
+        "inactiveBackground": "toolWindowBackground"
+      },
+
+      "HeaderTab": {
+        "hoverBackground": "activeTabBackground",
+        "hoverInactiveBackground": "activeTabBackground",
+        "selectedInactiveBackground": "activeTabBackground"
+      }
     }
   }
 }
